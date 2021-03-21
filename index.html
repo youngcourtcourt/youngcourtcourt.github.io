@@ -1,44 +1,179 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+
+<!-- Import fonts and bootsrap elements -->
+
 <head>
-  <meta charset="UTF-8">
-  <title>Hellos</title>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href='https://fonts.googleapis.com/css?family=DM Serif Text' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
-    <h1>Courtney MacDonald</h1>
+<body class="body">
 
-    <img src="https://i.makeagif.com/media/4-09-2018/P5sf7A.gif" alt="Courtney">
+    <!-- Header of website -->
 
-    <p>I enjoy going to the yeetpark, eating popcorn and communicating with birds</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 offset-md-3">
+                <div class="row">
+                    <h1 class="pacifico" id="mainTitle">Weather and Latitude</h1>
+                    <h1 class="pacifico" id="mainTitleShadow">Weather and Latitude</h1>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation tabs -->
 
 
-    <ul>
-      <li><strong>Email:</strong><a href="#">courtneynicolemacdonald@gmail.com</a></li>
-      <li><strong>IG</strong><a href="#">youngcourcourt</a></li>
-    </ul>
-    <table>
-      <tr>
-        <th>Books</th>
-        <th>Movies</th>
-        <th>Games</th>
-      </tr>
-      <tr>
-        <td>Zen and the Art of Motorcycle Maintenance</td>
-        <td>You've Got Mail</td>
-        <td>Settlers of Catan</td>
-      </tr>
-      <tr>
-        <td>A Field Guide to Getting Lost</td>
-        <td>La La Land</td>
-        <td>Uno</td>
-      </tr>
-      <tr>
-        <td>Second Suns</td>
-        <td>Ex Machina</td>
-        <td>Phase 10</td>
-      </tr>
-    </table>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="peach tab">
+                    <a href="temp.html">
+                        <h3>Visualizations</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="main-tab">
+                        <a href="index.html">
+                            <h6 class="noto-sans">Home</h6>
+                        </a>
+                    </div>
+                    <div class="main-tab">
+                        <a href="temp.html">
+                            <h6 class="noto-sans">Plots</h6>
+                        </a>
+                    </div>
+                    <div class="main-tab">
+                        <a href="comparisons.html">
+                            <h6 class="noto-sans">Comparisons</h6>
+                        </a>
+                    </div>
+                    <div class="main-tab">
+                        <a href="data.html">
+                            <h6 class="noto-sans">Data</h6>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation bar with preview of plots -->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="mustard-yellow box">
+                    <div class="bg-blue box wide-margin">
+                        <div class="card text">
+                            <a href="temp.html">
+                                <img class="card-img" src="Fig1.png" alt="Card image">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">City Latitude vs Max Temperature</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-blue box wide-margin">
+                        <div class="card text">
+                            <a href="humidity.html">
+                                <img class="card-img" src="Fig2.png" alt="Card image">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">City Latitude vs Humidity</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-blue box wide-margin">
+                        <div class="card text">
+                            <a href="cloudiness.html">
+                                <img class="card-img" src="Fig3.png" alt="Card image">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">City Latitude vs Cloudiness</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-blue box wide-margin">
+                        <div class="card text">
+                            <a href="windSpeed.html">
+                                <img class="card-img" src="Fig4.png" alt="Card image">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">City Latitude vs Wind Speed</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main body of landing page with large image -->
+            <div class="col-md-9">
+                <div class="teal box">
+                    <div class="row">
+                        <div class="col-md-8 align-self-center">
+                            <div class="back-box-main">
+                                <img class="main-image" src="Fig1.png">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row justify-content-center">
+                                <div class="grass-green fancy-box-back">
+                                </div>
+                                <div class="bg-blue fancy-box bottom-margin">
+                                    <h2 class="what-we-do">About</h2>
+                                </div>
+
+                            </div>
+                            <!-- Explanation of project -->
+                            <div class="row justify-content-center">
+                                <div class="sand box">
+                                    <p>The purpose of this project was to analyze how weather changes as you get
+                                        closer
+                                        to the equator. To accomplish this analysis, we first pulled data from
+                                        the
+                                        OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                                    <p>After assembling the dataset, we used Matplotlib to plot various aspects
+                                        of the
+                                        weather vs. latitude. Factors we looked at included: temperature,
+                                        cloudiness,
+                                        wind speed, and humidity. This site provides the source data and
+                                        visualizations
+                                        created as part of the analysis, as well as explanations and
+                                        descriptions of any
+                                        trends and correlations witnessed. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
 
 
 </body>
